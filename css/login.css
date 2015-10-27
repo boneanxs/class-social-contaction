@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Asenine";
+    src: url("../font/ASENINE.ttf"), url("../font/ASENINE.ttf");
+}
+@font-face {
+    font-family: "RTWSYueGoTrial";
+    src: url("../font/RTWSYueGoTrial-ExLight.otf"), url("../font/RTWSYueGoTrial-ExLight.otf");
+}
+@font-face {
+    font-family: "AsenineSuper";
+    src: url("../font/AsenineSuperThin.ttf"), url("../font/AsenineSuperThin.ttf");
+}
+/*--------------------------------------------------------------------*/
+.none{
+	display: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+/*----------------------------------------------------------------------------*/
+body{
+	height: 100%;
+	background: url("../img/background-image.png") no-repeat fixed center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size:cover;
+	-moz-background-size:cover;
+}
+#wrapper{
+	margin: 0 auto;
+	width: 980px;
+	padding-top: 70px;
+}
+h1{
+	font-family: Asenine;
+	font-size: 54px;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	letter-spacing: 40px;
+}
+h2{
+	font-family: RTWSYueGoTrial;
+	text-align: center;
+	color: white;
+	font-size: 34px;
+	line-height: 1.5em;
+}
+.content{
+	padding: 50px 0px;
+	margin: 20px auto 0px auto;
+	width: 367px;
+	height: 172px;
+	border: 1px solid white;
+	border-radius: 10px;
+	/*定义登录和注册高度变化动画*/
+	-moz-transition: content_height 0.6s ease-in-out;   
+	-webkit-transition: content_height 0.6s ease-in-out;
+	-o-transition: content_height 0.6s ease-in-out;
+	transition: content_height 0.6s ease-in-out;
+}
+.main_button{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	border: 1px solid white;
+    border-radius: 6px;
+    display: block;
+    height: 47px;
+    margin: 0 auto;
+    width: 207px;
+    cursor: pointer;
+}
+.login {
+    margin-bottom: 50px;
+}
+/*After removing display:none*/
+.ratingSection{
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	display: block;
+	width: 250px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 1em;
+	background-color: transparent;
+	border: 1px solid white;
+	outline: none;
+}
+.ratingSection:hover{
+	outline: 1px solid #9FB6CD;
+}
+#password{
+	font-size: 15px;
+}
+::-webkit-input-placeholder{
+	font-family: AsenineSuper;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+::-moz-placeholder{
+	font-family: AsenineSuper;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+:-moz-placeholder{
+	font-family: AsenineSuper;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+:-ms-input-placeholder{
+	font-family: AsenineSuper;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+#come{
+	display: block;
+	width: 70px;
+	height: 40px;
+	margin: 0 auto;
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	font-family: AsenineSuper;
+	font-size: 14px;
+	cursor: pointer;
+}
+#come:hover{
+	outline: 1px solid #9FB6CD;
+}
+.label-text{
+	text-align: center;
+	font-family: RTWSYueGoTrial;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+.div-table{
+	display: table;
+	padding-left: 20px;
+}
+.div-row{
+	display: table-row;
+	height: 50px;
+}
+.table-cell{
+	display: table-cell;
+}
+input.table-cell{
+	color: white;
+	font-size: 17px;
+	line-height: 2em;
+	font-family: Asenine;
+	height: 30px;
+	width: 220px;
+	background-color: transparent;
+	border: 1px solid white;
+}
+input.table-cell:hover{
+	outline: 1px solid #9FB6CD;
+}
+label.table-cell{
+	width: 90px;
+}
+#loginFormBtn{
+	overflow: hidden;
+	width: 210px;
+	margin: 20px auto 0px auto;
+}
+.btn{
+	float: left;
+	font-family: RTWSYueGoTrial;
+	color: white;
+	display: block;
+	width: 70px;
+	height: 40px;
+	background-color: transparent;
+	border: 1px solid white;
+	cursor: pointer;
+}
+button.btn{
+	margin-left: 70px;
+}
+.btn:hover{
+	outline: 1px solid #9FB6CD;
+}
