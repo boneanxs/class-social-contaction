@@ -12,13 +12,14 @@
 		<h2>你所记录的</h2>
 		<h2>不仅仅是生活</h2>
 		<div id="content">
-			<div id="ratingSection1" class="">
+			<div id="ratingSection1" class="none">
 				<span class="login main_button"><p class="logCN">登录</p><p class="logEN">login</p></span><br>
 				<span class="register main_button"><p class="logCN">注册</p><p class="logEN">register</p></span>
 			</div>
-			<div id="ratingSection2" class="none">
+			<div id="ratingSection2" class="">
 				<form id="ratingSection2_form">
 					<input type="text" placeholder="登录邮箱" id="account" class="login-input" name="email"><br>
+					<label id="email_error">邮箱格式不正确</label>
 					<input type="password" placeholder="密码" id="password" class="login-input" name="passwd"><br>
 					<input type="submit" value="确认" id="come">
 				</form>
