@@ -9,9 +9,12 @@ function loginInit(){
 	var loginButton=document.getElementsByClassName('login')[0],
 	registerButton=document.getElementsByClassName('register')[0];
 	cancelButton=document.getElementById('cancel-btn');
+	loginUser=document.getElementById('account');
+	// loginPassword=document.getElementById('password');
 	cancelButton.addEventListener('click',function(){window.location.href="file:///F:/school/class-social-contaction/login.html"},false);
 	loginButton.addEventListener('click',function(){swapToSection('section1')},false);
 	registerButton.addEventListener('click',function(){swapToSection('section2')},false);
+	loginUser.addEventListener('blur',isDataCorrect,false);
 }
 function swapToSection(section){
 	var sectionName,tempNode,contentWidth;
@@ -33,4 +36,10 @@ function swapToSection(section){
 	DOMhelp.cssjs('add',content,contentWidth);
 	DOMhelp.cssjs('add',tempNode,classNameHelper.fadeIn);
 }//登录注册切换
+//登录验证
+function isDataCorrect(e){
+	var target=e.target,
+	targetValue=target.value;
+	
+}
 window.addEventListener('load',loginInit,false);
