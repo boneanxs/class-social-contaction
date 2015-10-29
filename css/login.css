@@ -53,7 +53,7 @@ h2{
 .logCN{
 	line-height: 1.5em;
 }
-.content{
+#content{
 	padding: 50px 0px;
 	margin: 20px auto 0px auto;
 	width: 367px;
@@ -61,10 +61,16 @@ h2{
 	border: 1px solid white;
 	border-radius: 10px;
 	/*定义登录和注册高度变化动画*/
-	-moz-transition: content_height 0.6s ease-in-out;   
-	-webkit-transition: content_height 0.6s ease-in-out;
-	-o-transition: content_height 0.6s ease-in-out;
-	transition: content_height 0.6s ease-in-out;
+	-moz-transition: height 0.6s ease-in-out;   
+	-webkit-transition: height 0.6s ease-in-out;
+	-o-transition: height 0.6s ease-in-out;
+	transition: height 0.6s ease-in-out;
+}
+.contentWidth1{
+	height: 150px !important;
+}
+.contentWidth2{
+	height: 272px !important;
 }
 .main_button{
 	text-decoration: none;
@@ -82,7 +88,7 @@ h2{
     margin-bottom: 50px;
 }
 /*After removing display:none*/
-.ratingSection{
+.login-input{
 	color: white;
 	font-size: 17px;
 	text-align: center;
@@ -95,7 +101,7 @@ h2{
 	border: 1px solid white;
 	outline: none;
 }
-.ratingSection:hover{
+.login-input:hover{
 	outline: 1px solid #9FB6CD;
 }
 #password{
@@ -195,4 +201,111 @@ button.btn{
 }
 .btn:hover{
 	outline: 1px solid #9FB6CD;
+}
+/*ratingSectionAnimation*/
+.ratingSectionDisappear{
+	-webkit-animation: animateDisappear 0.6s ease-out;
+	-o-animation: animateDisappear 0.6s ease-out;
+	animation: animateDisappear 0.6s ease-out;
+}
+@keyframes animateDisappear{
+	0%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+	100%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+}
+@-moz-keyframes animateDisappear{
+	0%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+	100%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+} 
+@-o-keyframes animateDisappear{
+	0%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+	100%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+}
+@-webkit-keyframes animateDisappear{
+	0%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+	100%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+}
+.ratingSectionAppear{
+	-webkit-animation: animateAppear 0.6s ease-out;
+	-o-animation: animateAppear 0.6s ease-out;
+	animation: animateAppear 0.6s ease-out;
+}
+@keyframes animateAppear{
+	0%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+}
+@-moz-keyframes animateAppear{
+	0%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+} 
+@-o-keyframes animateAppear{
+	0%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
+}
+@-webkit-keyframes animateAppear{
+	0%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-moz-opacity:1;
+	}
 }
