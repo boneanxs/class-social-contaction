@@ -317,10 +317,10 @@ button.btn{
 	position: absolute;
 	padding: 3px;
 	top: 13px;
-	color: white;
+	color: red;
 	right: -70px;
 	display: block;
-	background-color: #50485F;
+	background-color: grey;
 }
 .intelligent-error:after{
 	position: absolute;
@@ -329,5 +329,5 @@ button.btn{
 	display: block;
 	content: '';
 	border: 6px solid transparent;
-	border-right-color: #50485F;
+	border-right-color: grey;
 }
