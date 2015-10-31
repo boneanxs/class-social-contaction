@@ -27,4 +27,14 @@ DOMhelp={
 			break;
 		}
 	},
+	cancelClick:function(e){
+		if (window.event) {
+			window.event.cancelBubble=true;
+			window.event.returnValue=false;
+		}
+		if (e&&e.stopPropagation&&e.preventDefault) {
+			e.stopPropagation();
+			e.preventDefault();
+		};
+	}
 };

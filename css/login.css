@@ -318,6 +318,7 @@ button.btn{
 	padding: 3px;
 	top: 13px;
 	color: red;
+	font-weight: bold;
 	right: -70px;
 	display: block;
 	background-color: grey;
@@ -330,4 +331,14 @@ button.btn{
 	content: '';
 	border: 6px solid transparent;
 	border-right-color: grey;
+}
+.login-error{
+	display: block;
+	color: red;
+	width: 130px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-top: -5px;
+	margin-bottom: 10px;
 }
